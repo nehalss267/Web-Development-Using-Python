@@ -44,7 +44,6 @@ def update(user_id):
         if user['id']==user_id:
             user_update=user
     return render_template('update.html',user=user_update)
-#user is name used inside html template of update.html
 
 @app.route('/updateuser/<int:user_id>',methods=['POST'])
 def update_user(user_id):
@@ -74,9 +73,7 @@ def delete_user(user_id):
     return redirect(url_for('read'))
 
 
-@app.route('/Home')
-
-# what server must do when user hits the URL home() is default
+@app.route('/')
 def home():
     return render_template('index.html')
 
