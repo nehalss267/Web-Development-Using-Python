@@ -1,25 +1,34 @@
-Flask JSON CRUD Application
-A lightweight User Management System built using Python and Flask. This application demonstrates fundamental CRUD (Create, Read, Update, Delete) operations using a local JSON file as a persistent database.
+#Flask CRUD App
 
-🚀 Features
-Create: Add new users with an ID, Name, and Email.
+A lightweight web application built with **Python** and **Flask** that demonstrates full **CRUD** (Create, Read, Update, Delete) operations. This project uses a local JSON file (`data.json`) as a database to persist user data.
 
-Read: View a comprehensive list of all registered users.
+## 🚀 Features
 
-Update: Edit the details (Name/Email) of existing users.
+- **Create:** Add new users with a unique ID, Name, and Email.
+- **Read:** View a list of all registered users in a tabular format.
+- **Update:** Edit existing user details.
+- **Delete:** Remove users from the database.
+- **Persistent Storage:** Data is saved in `data.json`, so it isn't lost when the server restarts.
+- **Static Assets:** Includes support for CSS, JavaScript, and Images.
 
-Delete: Remove users from the system.
+## 🛠️ Project Structure
 
-Persistent Storage: Uses data.json to store user data, ensuring data remains available after restarting the server.
-
-Simple UI: Clean HTML interface with basic CSS styling.
-
-🛠️ Tech Stack
-Backend: Python 3, Flask
-
-Frontend: HTML5, CSS3, JavaScript
-
-Database: JSON (File-based storage)
+```text
+├── app.py               # Main Flask application logic
+├── data.json            # JSON file acting as the database
+├── static/              # Static files (CSS, JS, Images)
+│   ├── style.css
+│   ├── script.js
+│   └── testImg.jpg
+├── templates/           # HTML Templates
+│   ├── index.html       # Home page
+│   ├── read.html        # View all users (Dashboard)
+│   ├── add.html         # Add user form
+│   ├── update.html      # Update user form
+│   ├── delete.html      # Delete confirmation
+│   ├── about.html       # About page
+│   └── submit.html      # Submission success page
+└── README.md            # Project documentation
 
 📂 Project Structure
 Plaintext
