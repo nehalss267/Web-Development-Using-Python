@@ -3,14 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD Home</title>
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
     <script src="{{url_for('static',filename='script.js')}}"></script>
+    <style>
+        .menu-container {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+            display: inline-block;
+        }
+        .menu-btn {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .menu-btn:hover {
+            background-color: #0056b3;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Basic CRUD Application</h1>
-    <button id="out" onClick="Display()">Click Me </button>
-    <div id="out-string"></div>
-    <img src="{{url_for('static',filename='testImg.jpg')}}" height="300" width="300" alt="Test Image">
+    <h1>Welcome to the User Management System</h1>
+
+    <div class="menu-container">
+        <h3>Select an Operation:</h3>
+        
+        <a href="/add">
+            <button class="menu-btn">Add New User</button>
+        </a>
+        <br><br>
+        
+        <a href="/read">
+            <button class="menu-btn">View All Users (Manage)</button>
+        </a>
+    </div>
+
 </body>
 </html>
