@@ -1,4 +1,4 @@
-#Flask CRUD App
+Flask CRUD App
 
 A lightweight web application built with **Python** and **Flask** that demonstrates full **CRUD** (Create, Read, Update, Delete) operations. This project uses a local JSON file (`data.json`) as a database to persist user data.
 
@@ -29,67 +29,65 @@ A lightweight web application built with **Python** and **Flask** that demonstra
 │   ├── about.html       # About page
 │   └── submit.html      # Submission success page
 └── README.md            # Project documentation
+```
+---
 
-📂 Project Structure
-Plaintext
-├── app.py              # Main application logic and routing
-├── data.json           # specific JSON file storing user data
-├── static/             # Static assets
-│   ├── style.css       # Stylesheet
-│   ├── script.js       # Client-side scripts
-│   └── testImg.jpg     # Test images
-└── templates/          # HTML Templates
-    ├── index.html      # Home/Landing page
-    ├── read.html       # Dashboard (View all users)
-    ├── add.html        # Form to add a user
-    ├── update.html     # Form to edit a user
-    ├── delete.html     # Confirmation page for deletion
-    ├── about.html      # About page
-    └── submit.html     # Form submission result page
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
+
 Follow these steps to get the project running on your local machine.
 
-1. Clone the Repository
-Bash
-git clone https://github.com/your-username/repository-name.git
-cd repository-name
-2. Set up a Virtual Environment (Optional but Recommended)
-Bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
+### 1. Clone the Repository
 
-# macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-3. Install Dependencies
-You only need Flask to run this application.
+```bash
+git clone https://github.com/nehalss267/Web-Development-Using-Python.git
+cd Web-Development-Using-Python
+````
 
-Bash
+### 2. Install Dependencies
+
+You need to install Flask to run this application.
+
+```bash
 pip install flask
-4. Run the Application
-Bash
+```
+
+### 3. Run the Application
+
+```bash
 python app.py
-5. Access the App
-Open your web browser and navigate to: http://127.0.0.1:5000
+```
 
-📖 How to Use
-Home: The landing page allows you to navigate to the "Add User" or "View Users" sections.
+### 4. Access the App
 
-Add User: Enter a unique numeric ID, Name, and Email. Click Submit.
+Open your web browser and navigate to:
 
-View Users: See the table of all users.
+```
+http://127.0.0.1:5000/Home
+```
 
-Click Edit to modify a specific user's details.
+---
 
-Click Delete to remove a user from the data.json file.
+## 📖 How to Use
 
-⚠️ Important Note on Data
-This application uses a file (data.json) to store data.
+* **Home:** The landing page allows you to navigate to the "Add User" or "View Users" sections.
+* **Add User:** Enter a unique numeric ID, Name, and Email. Click Submit.
+* **View Users:** See the table of all users.
 
-If the file does not exist, the app will create it automatically when you add the first user.
+  * Click **Edit** to modify a specific user's details.
+  * Click **Delete** to remove a user from the `data.json` file.
 
-Ensure the application has write permissions in the directory to update the JSON file.
+---
 
-📝 License
+## ⚠️ Important Note
+
+This application uses a file (`data.json`) to store data.
+
+* If the file does not exist, the app will create it automatically when you add the first user.
+* Ensure the application has write permissions in the directory to update the JSON file.
+
+---
+
+## 📝 License
+
 This project is open-source and available for educational purposes.
+
