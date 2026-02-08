@@ -1,4 +1,4 @@
-Flask CRUD App
+## Flask CRUD App
 
 A lightweight web application built with **Python** and **Flask** that demonstrates full **CRUD** (Create, Read, Update, Delete) operations. This project uses a local JSON file (`data.json`) as a database to persist user data.
 
